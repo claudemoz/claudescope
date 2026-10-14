@@ -1,0 +1,34 @@
+{
+  "name": "claudoscope",
+  "version": "0.0.0",
+  "description": "Linter déterministe pour les fichiers de configuration Claude Code (CLAUDE.md, .claude/).",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "claudoscope": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claudoscope",
+    "claude-code",
+    "linter",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@claudoscope/core": "workspace:*",
+    "commander": "^13.0.0"
+  }
+}

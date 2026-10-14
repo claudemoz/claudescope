@@ -1,0 +1,35 @@
+{
+  "name": "@claudoscope/core",
+  "version": "0.0.0",
+  "description": "Moteur pur du linter claudoscope : contenus en mémoire → Finding[], zéro I/O.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claudoscope",
+    "claude-code",
+    "linter",
+    "engine"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}
