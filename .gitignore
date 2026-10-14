@@ -9,4 +9,4 @@ build/
 *.tsbuildinfo
 
 # Local Claude settings
-.claude/settings.local.json
+settings.local.json
